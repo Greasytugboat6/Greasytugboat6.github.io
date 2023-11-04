@@ -7,7 +7,7 @@ function getCadence(){
         if (response == 'granted') {
             console.log("accelerometer permission granted");
             window.addEventListener('devicemotion', (event) => {
-                var netAccel = sqrt(event.acceleration.x ^ 2 + event.acceleration.y ^ 2 + event.acceleration.z ^ 2)
+                var netAccel = Math.sqrt(event.acceleration.x ** 2 + event.acceleration.y ** 2 + event.acceleration.z ** 2)
                 
                 
                 accelReader.innerHTML = toString(netAccel)
