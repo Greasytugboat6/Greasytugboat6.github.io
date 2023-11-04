@@ -10,7 +10,7 @@ function getCadence(){
                 var netAccel = Math.sqrt(event.acceleration.x ** 2 + event.acceleration.y ** 2 + event.acceleration.z ** 2)
                 
                 window.alert(netAccel)
-                accelReader.innerHTML = toString(netAccel)
+                accelReader.innerHTML = netAccel.toString()
             })
 
         }
