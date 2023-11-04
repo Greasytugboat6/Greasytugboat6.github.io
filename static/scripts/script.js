@@ -10,7 +10,7 @@ function getCadence(){
                 var netAccel = event.acceleration
                 
                 
-                accelReader.innerHTML = netAccel
+                accelReader.innerHTML = toString(netAccel)
             })
 
         }
